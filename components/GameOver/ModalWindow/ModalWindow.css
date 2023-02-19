@@ -1,0 +1,98 @@
+.hidden{
+    display: none;
+}
+
+.vmodal.open .modal-window{
+    transform: translateY(100px);
+}
+
+.vmodal.open .modal-overlay{
+    background: rgba(46, 43, 75, 0.5);
+}
+
+.vmodal.disappearance .modal-window{
+    transform: translateY(-200px);
+}
+
+.vmodal.disappearance .modal-overlay{
+    background: rgba(46, 43, 75, 0);
+}
+
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background: rgba(46, 43, 75, 0);
+    transition: background .2s ease-in;
+}
+
+.modal-window{
+    width: 350px;
+    border-radius: 5px;
+    background: rgb(26, 43, 38);
+    margin:  0 auto;
+    opacity: 1;
+    transform: translateY(-200px);
+    transition: transform .2s ease-in;
+    color: white;
+}
+
+.modal-header{
+    display: flex;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid green;
+}
+
+.modal-header > p{
+    text-align: center;
+}
+
+.modal-title{
+    font-size: 1.5rem;
+}
+
+.modal-close{
+    cursor: pointer;
+}
+
+.modal-body{
+    padding: 10px;
+    text-align: center;
+}
+
+.modal-body p{
+    margin: 0 0 5px;
+    text-align: center;
+}
+
+.modal-footer{
+    padding: 5px 10px;
+    border-top: 1px solid green;
+}
+
+.modal-footer .btn:first-child{
+    background-color: rgb(65, 82, 235);
+    border: 2px solid green;
+}
+/* ------------------------------------------------------------------------------------ */
+.modal-confirm-header{
+    display: flex;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid green;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+.modal-body input{
+    border-radius: 5px;
+    width: 90%;
+    border: 2px solid green;
+    background-color: rgba(46, 43, 75, 0.5);
+    color: white;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./img/icon__snake.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="score" id="score">Score: <p>0</p></div>
+        <div class="game_field" id="game_field">
+            
+        </div>
+    </div>
+    <!-- Constants and main page -->
+    <script src="./constants/root.js"></script>
+    <script src="./index.js"></script>
+    <!-- Cross border -->
+    <script src="./components/CrossBorder/CrossBorder.js"></script>
+    <link rel="stylesheet" href="./components/CrossBorder/CrossBorder.css">
+    <!-- Food and score -->
+    <script src="./components/FoodAndScore/FoodAndScore.js"></script>
+    <link rel="stylesheet" href="./components/FoodAndScore/FoodAndScore.css">
+    <!-- Game over -->
+    <link rel="stylesheet" href="./components/GameOver/ModalWindow/ModalWindow.css">
+    <script src="./components/GameOver/ModalWindow/ModalWindow.js"></script>
+    <script src="./components/GameOver/GameOver.js"></script>
+    <script src="./components/GameOver/RecordResult/RecordResult.js"></script>
+    <!-- Move snake -->
+    <script src="./components/MoveAndEatSnake/MoveAndEatSnake.js"></script>
+    <link rel="stylesheet" href="./components/MoveAndEatSnake/MoveAndEatSnake.css">
+    <!-- Increase snake -->
+    <script src="./components/IncreaseSnake/IncreaseSnake.js"></script>
+    <link rel="stylesheet" href="./components/IncreaseSnake/IncreaseSnake.css">
+</body>
+</html>
